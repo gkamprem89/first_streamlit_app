@@ -22,6 +22,6 @@ streamlit.dataframe(fruits_to_show)
 
 
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
 response_normalize = pd.json_normalize(fruityvice_response.json())
 streamlit.dataframe(response_normalize)
